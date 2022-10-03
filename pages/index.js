@@ -2,7 +2,7 @@ import React from 'react';
 import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner, Footer } from '../components';
 
-const home = ({ products, bannerData }) => (
+const Home = ({ products, bannerData }) => (
   <div>
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     <div className="products-heading">
@@ -28,4 +28,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default home;
+export default Home;
